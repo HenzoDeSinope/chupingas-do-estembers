@@ -1,0 +1,85 @@
+body {
+    background-color: #123524;
+    color: #fff;
+    margin: 0px;
+}
+#passwordPrompt{
+        text-align: center;
+        align-items: center;
+    }
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    display: none;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.intro {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.menu-toggle {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+.nav-menu {
+    display: none; 
+    background-color: #444;
+    padding: 10px 0;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 10px 0;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-menu li a:hover {
+    color: #ddd;
+}
+
+.show-menu {
+    display: block;
+}
+
+.giannn{
+    width: 300px;
+}
+
+#babum{
+    color: red
+}
+
+#hint{
+    margin: 0px;
+    font-style: italic;
+    font-size: xx-small;
+    opacity:  0.5;
+
+}
