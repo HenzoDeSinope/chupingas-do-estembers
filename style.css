@@ -1,24 +1,76 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
     background-color: #123524;
     color: #fff;
-    margin: 0px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 #passwordPrompt{
         text-align: center;
         align-items: center;
     }
 
-.header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    display: none;
-    border-radius: 25px 25px 25px 25px;
-}
+.common {
+        background-color: #333;
+        color: #fff;
+        padding: 40px;
+        text-align: center;
+        border-radius: 0 0 25px 25px;
+        display: none; 
+        position: sticky;
+    }
+    
+ .header {
+        position: sticky;
+        top: 0;
+        
+    }
 
+.footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 25px 25px 0 0;
+        position: relative;
+        width: 100%;
+        display: none;
+    }
+
+.end{
+    color:white;
+    font-size: small;
+}
+.hist{
+        display: none;
+        text-align: justify;
+        color: black;
+        grid-row: 2;
+        flex: 1; 
+        margin: 30px 50px;
+    } 
+
+ .subtitulo {
+        font-size: 1.2em;
+        color: #ddd;    
+        margin-top: 5px;  
+        text-align: center; 
+    }
+    
 .header h1 {
     margin: 0;
 }
@@ -30,19 +82,27 @@ body {
 
 .menu-toggle {
     font-size: 1.5em;
-    background: none;
+    background: #353434;
     border: none;
     color: #fff;
     cursor: pointer;
     position: absolute;
-    top: 12px;
+    padding: 3px 5px;
+    top: -9px;
     right: 20px;
+    transition: 0.3s ease; 
 }
 
+.menu-toggle:hover {
+    transform: scale(1.3);
+}
+
+
 .nav-menu {
-    display: none; 
-    background-color: #444;
-    padding: 10px 0;
+    max-height: 0; 
+    overflow: hidden; 
+    background-color: #333;
+    transition: 0.5s ease; 
 }
 
 .nav-menu ul {
@@ -65,7 +125,7 @@ body {
 }
 
 .show-menu {
-    display: block;
+    max-height: 200px; 
 }
 
 .giannn{
@@ -83,3 +143,4 @@ body {
     opacity:  0.5;
 
 }
+
